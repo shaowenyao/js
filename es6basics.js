@@ -62,3 +62,12 @@ var x = "value is declared";
 y="DO NOT HOIST LETS OR CONSTS";
 var y;
 console.log(y + "this returns value")
+
+//ES6 FILTER + ARROW SHORTHAND
+function morethan5 (value) {return value > 5; }
+var numarr=[1,9,5,3,2].filter(morethan5);
+let tempnumarr=[1,9,5,3,2].filter(value => value >5);
+
+//ES6 MAP
+
+//ES6 REDUCE
