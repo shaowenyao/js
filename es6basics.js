@@ -27,3 +27,9 @@ function blockscopefunc() {
 		let blockscope=1 + "this references the prev { block } ";
 	}
 }
+
+//ES6 BETTER FOR LOOP + ARROW FUNC
+let forarray = [1,2,3];
+for (let value of forarray) { console.log(value); }
+//ES6 FOREACHLOOP
+forarray.forEach( anything_justhastomatch => console.log(anything_justhastomatch));
