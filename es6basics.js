@@ -68,6 +68,19 @@ function morethan5 (value) {return value > 5; }
 var numarr=[1,9,5,3,2].filter(morethan5);
 let tempnumarr=[1,9,5,3,2].filter(value => value >5);
 
-//ES6 MAP
+//ES6 MAP AKA BETTER OBJECT
+var numbers = [1,2,3,4,5,6,7,8,9,10]; 
+var increase_by_one_array = numbers.map(n=>n+1);
+map.size(); //OBJ cannot
+map.insertArrayOperationHere(); //OBJ cannot
+myMap.forEach(function(value, key) {
+  console.log(key + ' = ' + value); //myMap ( [value, key])
+});
 
 //ES6 REDUCE
+var total = [ 0, 1, 2, 3 ].reduce( (accumulator, currentValue)=>accumulator+currentValue,0); // 0 = first pair
+const reducer = (accumulator, currentValue) => accumulator + currentValue(opt: .subobj); //PRE write reduce function
+const reducer = (accumulator, currentValue) => { accumulator.concat(currentValue) }; //FLATTEN + ADD TO NEW ARRAY {} for multiple lines
+samplearray.reduce(reducer, #startindex); //use premade reducer
+
+
