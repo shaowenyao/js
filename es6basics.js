@@ -30,7 +30,8 @@ function blockscopefunc() {
 
 //ES6 BETTER FOR LOOP 
 let forarray = [1,2,3];
-for (let value of forarray) { console.log(value); }
+for (let value of forarray) { console.log(value); } //array operations
+for (variable in enumerable) { dostuff(); } //object operations
 //ES6 FOREACHLOOP + ARROW FUNC
 forarray.forEach( function(item) { console.log(item)});
 forarray.forEach( anything_justhastomatch => console.log(anything_justhastomatch));
