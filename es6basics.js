@@ -83,4 +83,15 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue(opt: .
 const reducer = (accumulator, currentValue) => { accumulator.concat(currentValue) }; //FLATTEN + ADD TO NEW ARRAY {} for multiple lines
 samplearray.reduce(reducer, #startindex); //use premade reducer
 
+//CALL, APPLY, BIND
+var overridevar="blah";
+obj.func.call(overrridevar); //use "blah" instead!
+
+.apply => call but [ arg, arg, arg];
+
+.bind => override and replace args
+function add(a,b) { return a + b; }  
+var add2 = add.bind(null, 2);  
+add2(4);   // 6  
+add2(3,6); // 5  
 
