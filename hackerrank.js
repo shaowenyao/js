@@ -1,12 +1,12 @@
 //HASH LOOP
 
 let final=0;
-    let max=[0,0];
+    let max=0;
     let hashtable=[]
     for (let i=0; i<arr.length; i++) {
-        if ( isNaN(hashtable[i]) ) { hashtable[i]=0;} 
-        hashtable[i]++;
-        if (hashtable[i]>max[1]) { max[0]=i; max[1]=hashtable[i]; }
+        if ( isNaN(hashtable[arr[i]]) ) { hashtable[arr[i]]=0;} 
+        hashtable[arr[i]]++;
+        if (hashtable[arr[i]]>=max) { max=hashtable[arr[i]]; console.log(arr[i]); }
     }
-    final = max[1];
+    final = arr.length-max;
     return final;
