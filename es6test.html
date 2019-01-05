@@ -4,6 +4,14 @@
     <script>
         console.log('es6test');
 
+        //ANON FUNC SELF EXEC
+        (function() {
+            console.log("single line execute");
+            function insideFunc() { console.log("inside func")}
+            insideFunc();
+        })();
+
+        //
     </script>
 </head>
 
